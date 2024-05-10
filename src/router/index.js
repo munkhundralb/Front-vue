@@ -176,14 +176,14 @@ const routes= [
                   title: 'Элсэх эрх баталгаажуулах'
                 }
             },
-            // {
-            //   name: 'confirmpayment',
-            //   path: 'confirmpayment',
-            //   component: () => import('../app/Confirm/Payment.vue'),
-            //   meta: {
-            //       title: 'Элсэх эрх баталгаажуулах төлбөр'
-            //     }
-            // },
+            {
+              name: 'confirmpayment',
+              path: 'confirmpayment',
+              component: () => import('../app/Confirm/Payment.vue'),
+              meta: {
+                  title: 'Элсэх эрх баталгаажуулах төлбөр'
+                }
+            },
             {
               name: 'student',
               path: 'student',
