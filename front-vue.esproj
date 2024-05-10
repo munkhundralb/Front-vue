@@ -1,11 +1,27 @@
-<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.7-alpha">
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.7-alpha">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>efb0a40f-d45e-494d-a081-0b1219994076</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
   <PropertyGroup>
     <StartupCommand>npm run serve</StartupCommand>
-  <JavaScriptTestRoot>.\</JavaScriptTestRoot>
+    <JavaScriptTestRoot>.\</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
   <ItemGroup>
     <Script Include="**" Exclude="*.esproj;**\node_modules\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Script Remove="bachelor\**" />
+    <Script Remove="bachelor_test\**" />
+    <Script Remove="src\app\StudentRegister\**" />
+    <Script Remove="src\Layout\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\router\" />
   </ItemGroup>
   <!-- This target is copied from the ASP.NET SPA template in order to ensure node_modules are in place. -->
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

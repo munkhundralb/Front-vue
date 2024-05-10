@@ -22,3 +22,15 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### production build хийх
+```
+npm run build
+```
+
+### test build хийх
+```
+npm run test
+```
+

@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkfront_vue"]=self["webpackChunkfront_vue"]||[]).push([[834],{6834:function(e,n,r){r.r(n),r.d(n,{default:function(){return o}});var t=r(3396);const s={class:"sidebay",style:{height:"1500px"}};function u(e,n,r,u,a,c){return(0,t.wg)(),(0,t.iD)("div",s)}var a={name:"Home",props:{msg:String}},c=r(89);const i=(0,c.Z)(a,[["render",u]]);var o=i}}]);
