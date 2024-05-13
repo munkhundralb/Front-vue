@@ -23,16 +23,16 @@ export default {
     // Define data
     const data = [
       {
-        category: "2020 он",
-        value2: 635.3,
-      },
-      {
         category: "2021 он",
         value2: 645.1,
       },
       {
         category: "2022 он",
         value2: 643.7,
+      },
+      {
+        category: "2023 он",
+        value2: 622.9,
       },
     ];
 

@@ -22,14 +22,6 @@ export default {
     // Define data
     let data = [
       {
-        category: "2020 он",
-        value1: 28879,
-        value2: 3705,
-        value3: 30412,
-        value4: 11160,
-        value5: 3168,
-      },
-      {
         category: "2021 он",
         value1: 34811,
         value2: 3695,
@@ -44,6 +36,14 @@ export default {
         value3: 35653,
         value4: 12607,
         value5: 3159,
+      },
+      {
+        category: "2023 он",
+        value1: 32091,
+        value2: 3720,
+        value3: 33135,
+        value4: 11353,
+        value5: 3400,
       },
     ];
 

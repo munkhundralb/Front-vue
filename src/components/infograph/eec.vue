@@ -32,9 +32,9 @@ export default {
     let chart = null;
     const selectedOption = ref(0);
     const chartDataOptions = [
-      { label: "2022 он", value: 0 },
-      { label: "2021 он", value: 1 },
-      { label: "2020 он", value: 2 },
+      { label: "2023 он", value: 0 },
+      { label: "2022 он", value: 1 },
+      { label: "2021 он", value: 2 },
     ];
 
     const createChart = () => {
@@ -56,43 +56,43 @@ export default {
       const data = [
         {
           category: "Англи хэл",
-          value: 628.7,
+          value: 616.7,
         },
         {
           category: "Биологи",
-          value: 613.3,
+          value: 614.2,
         },
         {
           category: "Газарзүй",
-          value: 628.3,
+          value: 595.4,
         },
         {
           category: "Математик",
-          value: 631.7,
+          value: 630.7,
         },
         {
           category: "Монгол улсын түүх",
-          value: 641,
+          value: 622.5,
         },
         {
           category: "Монгол хэл",
-          value: 638.7,
+          value: 606.6,
         },
         {
           category: "Нийгмийн тухай мэдлэг",
-          value: 643.5,
+          value: 627.8,
         },
         {
           category: "Орос хэл",
-          value: 750.3,
+          value: 727,
         },
         {
           category: "Физик",
-          value: 633.7,
+          value: 628.6,
         },
         {
           category: "Хими",
-          value: 622.3,
+          value: 623.7,
         },
       ];
 
@@ -176,7 +176,54 @@ export default {
       if (chart) {
         switch (selectedOption.value) {
           case 0:
-            // Update chart data or settings for Option 1
+            // Update chart data or settings for Option 1 2023 on
+            chart.series.each((series) => {
+              series.data.setAll([
+                {
+                  category: "Англи хэл",
+                  value: 616.7,
+                },
+                {
+                  category: "Биологи",
+                  value: 614.2,
+                },
+                {
+                  category: "Газарзүй",
+                  value: 595.4,
+                },
+                {
+                  category: "Математик",
+                  value: 630.7,
+                },
+                {
+                  category: "Монгол улсын түүх",
+                  value: 622.5,
+                },
+                {
+                  category: "Монгол хэл",
+                  value: 606.6,
+                },
+                {
+                  category: "Нийгмийн тухай мэдлэг",
+                  value: 627.8,
+                },
+                {
+                  category: "Орос хэл",
+                  value: 727,
+                },
+                {
+                  category: "Физик",
+                  value: 628.6,
+                },
+                {
+                  category: "Хими",
+                  value: 623.7,
+                },
+              ]);
+            });
+            break;
+          case 1:
+            // Update chart data or settings for Option 2 2022 on
             chart.series.each((series) => {
               series.data.setAll([
                 {
@@ -222,8 +269,8 @@ export default {
               ]);
             });
             break;
-          case 1:
-            // Update chart data or settings for Option 2
+          case 2:
+            // Update chart data or settings for Option 3 2021 on
             chart.series.each((series) => {
               series.data.setAll([
                 {
@@ -265,53 +312,6 @@ export default {
                 {
                   category: "Хими",
                   value: 638.6,
-                },
-              ]);
-            });
-            break;
-          case 2:
-            // Update chart data or settings for Option 3
-            chart.series.each((series) => {
-              series.data.setAll([
-                {
-                  category: "Англи хэл",
-                  value: 622.6,
-                },
-                {
-                  category: "Биологи",
-                  value: 602,
-                },
-                {
-                  category: "Газарзүй",
-                  value: 613.5,
-                },
-                {
-                  category: "Математик",
-                  value: 623.7,
-                },
-                {
-                  category: "Монгол улсын түүх",
-                  value: 636.9,
-                },
-                {
-                  category: "Монгол хэл",
-                  value: 633.5,
-                },
-                {
-                  category: "Нийгмийн тухай мэдлэг",
-                  value: 640,
-                },
-                {
-                  category: "Орос хэл",
-                  value: 729.5,
-                },
-                {
-                  category: "Физик",
-                  value: 630.8,
-                },
-                {
-                  category: "Хими",
-                  value: 627.6,
                 },
               ]);
             });

@@ -35,12 +35,12 @@ export default {
     });
 
     series.slices.template.setAll({
-      strokeWidth: 3,
+      strokeWidth: 1,
       stroke: am5.color(0xffffff),
     });
 
     series.labels.template.setAll({
-      textType: "circular",
+      // textType: "circular",
       centerX: 0,
       centerY: 0,
     });
@@ -48,7 +48,7 @@ export default {
     // Add a label to the center of the chart
     let label = chart.seriesContainer.children.push(
       am5.Label.new(root, {
-        text: "3116", // Customize the number here
+        text: "3407", // Customize the number here
         centerX: am5.percent(50),
         centerY: am5.percent(50),
         fontSize: 30,
@@ -58,21 +58,47 @@ export default {
 
     // Set data
     series.data.setAll([
-      { value: 1505, category: "ШУС", name: "Шинжлэх ухааны сургууль" },
-      { value: 6, category: "ЭС", name: "Эрдэнэт сургууль" },
-
-      { value: 475, category: "БС", name: "Бизнесийн сургууль" },
-      { value: 139, category: "ХЗС", name: "Хууль зүйн сургууль" },
       {
-        value: 841,
-        category: "ХШУИС",
-        name: "Хэрэглээний шинжлэх ухаан, инженерчлэлийн сургууль",
+        value: 1644,
+        category: "ШУС",
+        name: "Шинжлэх ухааны сургууль",
       },
       {
-        value: 150,
+        value: 17,
+        category: "МТЭС",
+        name: "Мэдээллийн технологи, электроникийн сургууль",
+      },
+      { value: 595, category: "БС", name: "Бизнесийн сургууль" },
+
+      {
+        value: 12,
+        category: "ИТС",
+        name: "Инженер технологийн сургууль",
+      },
+
+      { value: 160, category: "ХЗС", name: "Хууль зүйн сургууль" },
+      {
+        value: 2,
+        category: "ЗС",
+        name: "Завхан сургууль",
+      },
+      {
+        value: 157,
         category: "ОУХНУС",
         name: "Олон улсын харилцаа, нийтийн удирдлагын сургууль",
       },
+      {
+        value: 5,
+        category: "ХС",
+        name: "Ховд аймаг дахь сургууль",
+      },
+      {
+        value: 798,
+        category: "ХШУИС",
+        name: "Хэрэглээний шинжлэх ухаан, инженерчлэлийн сургууль",
+      },
+
+      { value: 17, category: "ДС", name: "Дорнод аймаг дахь сургууль" },
     ]);
 
     // Create legend

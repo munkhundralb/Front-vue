@@ -16,7 +16,7 @@
       <div ref="chartdiv">
         <div class="border rounded mb-4 pb-5">
           <h5 class="pt-4 text-center px-2">
-            2022 онд элссэн элсэгчдийн тоо (Аймгаар)
+            2023 онд элссэн элсэгчдийн тоо (Аймгаар)
           </h5>
           <p style="color: #89939e" class="text-center pb-2">
             Тухайн аймаг дээр дарснаар элсэгчдийн тоог харах боломжтой
@@ -70,7 +70,7 @@
           <div class="col-md-6 mb-4">
             <div class="border rounded pt-4 pb-5">
               <h5 class="text-center mb-5 px-2">
-                2022 онд элссэн элсэгчдийн хувь (Сургуулиар)
+                2023 онд элссэн элсэгчдийн хувь (Сургуулиар)
               </h5>
               <schools />
             </div>
